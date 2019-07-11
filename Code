@@ -1,0 +1,5 @@
+library(ggplot2)
+setwd("C:/Users/Henry.Nketeh/Desktop")
+playoff2 <- read.csv("playoff.csv")
+ggplot(playoff2, aes(x = b , y = a, color = c )) +
+  geom_point(aes(color = factor(c)))
